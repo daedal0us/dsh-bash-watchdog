@@ -1,0 +1,4 @@
+# dsh-bash-watchdog bundle patch: one Host row, no client half.
+- insert:
+    - id: dsh-bash-watchdog
+      name: dsh-bash-watchdog

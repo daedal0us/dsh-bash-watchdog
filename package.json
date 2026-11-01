@@ -1,0 +1,41 @@
+{
+  "name": "dsh-bash-watchdog",
+  "version": "0.1.2",
+  "private": true,
+  "description": "Stops the persistent win-bash bash.exe processes before the Harness runs a pnpm mutation, so pnpm can replace the locked package directory instead of failing with EPERM; works with the default replacePwsh:true and refuses profile-targeting pnpm inside the persistent shell.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "win-bash",
+    "pnpm",
+    "watchdog"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Bash Watchdog",
+    "description": "Stops the persistent win-bash shell before a pnpm install, update or uninstall, so pnpm can replace the locked package directory instead of failing with EPERM."
+  }
+}

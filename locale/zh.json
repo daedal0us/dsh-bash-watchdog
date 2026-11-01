@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Bash 看门狗",
+    "description": "在 pnpm 安装、更新或卸载插件之前自动关闭常驻的 win-bash shell，避免它锁住包目录导致 pnpm 替换失败（EPERM）。"
+  }
+}
